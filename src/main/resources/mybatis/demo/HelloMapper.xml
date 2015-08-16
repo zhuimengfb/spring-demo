@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="com.spring.demo.repository.mybatis.IHelloDao">
+<resultMap type="com.spring.model.UserInfo" id="userInfoResultMap">
+	<id property="id" column="ID"></id>
+	<result property="userName" column="USER_NAME"></result>
+	<result property="password" column="PASSWORD"></result>
+</resultMap>
+
+<select id="selectUserInfoByUserName" parameterType="String" resultMap="userInfoResultMap">
+	SELECT * FROM TB_USER_INFO WHERE USER_NAME=#{userName,jdbcType=VARCHAR}
+</select>
+
+</mapper>

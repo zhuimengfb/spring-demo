@@ -21,9 +21,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	<form action="hello" method="post">
-    	<input type="text" name="userName" id="userName">
-    	<input type="submit" value="提交">
-    </form>
+  	<%response.sendRedirect("hello"); %>
   </body>
 </html>
