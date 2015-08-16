@@ -1,8 +1,7 @@
-package com.spring.test.controller;
+package com.spring.demo.web;
 
 import java.util.Map;
 
-import javax.servlet.annotation.ServletSecurity;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
